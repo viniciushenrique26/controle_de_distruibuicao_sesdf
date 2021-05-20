@@ -58,7 +58,7 @@
 #termo { 
 	position: fixed;
     left: 21%;
-    top: 23%;
+    top: 27%;
     width: 45%;
 }
 .light {
@@ -75,8 +75,9 @@
     margin-left: auto;
 } 
 .label-seach { 
-    margin-left: -27%;
+    margin-left: -25%;
     font-size: 21px;
+    margin-top: 0%;
 }  
 #btn-record-cell { 
 	
@@ -513,7 +514,7 @@ fieldset {
 	padding: 10px;
     margin-left: -1%;
 	position: fixed;
-	margin-top: 65px;
+	margin-top: 45px;
 	background: var(--main-bg-color);
 	box-shadow: rgba(0,0,0,0.12) 0px 1px 4px 1px;
 	overflow: hidden;

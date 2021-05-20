@@ -4,41 +4,34 @@ function collapseSidebar() {
 	body.classList.toggle('sidebar-expand')
 }
 
-window.onclick = function(event) {
-	openCloseDropdown(event)
-}
 
-function seach_cel() { 
-    $(document).ready(function() {
-        $("input[type=button]").click(function(event) {
-            $("#conteudo").load('cadastro_celular.html',aviso());
-        });
-    });
-};
+
+
 
 
 function seach_cel() { 
-    $("#includedContentCell").load("pesquisar_celular.html");
+    $("#includedContentCell").load("pesquisar_celular.php");
 };
 function seach_user() { 
-    $("#includedContentCell").load("pesquisar_usuario.html");
+    $("#includedContentCell").load("pesquisar_usuario.php");
 };
 function btn_cadastro_cell() { 
-    $("#includedContentCell").load("cadastro_celular.html");
+    $("#includedContentCell").load("cadastro_celular.php");
 };
 function btn_cadastro_user() { 
-    $("#includedContentCell").load("cadastro_usuario.html");
+    $("#includedContentCell").load("cadastro_usuario.php");
 };
 
 function seach() {  
-    $("#includedContentCell").load("listagem.html");
+    $("#includedContentCell").load("listagem.php");
    
 };  
 
 function btn_vinculo() {  
-    $("#includedContentCell").load("vincular.html");
+    $("#includedContentCell").load("vincular.php");
    
-}; 
+};   
+
 
 /*function btn_vinculo() { 
     $('#container-vinculo').show();
@@ -47,13 +40,7 @@ function btn_vinculo() {
     $('#container-cell').hide();  
 }; */
 
-function record_cell() { 
-    alert("Celular Gravado!");
-}; 
 
-function cancelar_cell() { 
-    alert("Cancelado!");
-}; 
 
 function record_user() { 
     alert("Usuário Gravado!");

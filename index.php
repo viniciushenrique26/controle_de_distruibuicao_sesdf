@@ -1,12 +1,9 @@
 <?php
-
-	$linha = $_GET["linha"]; 
-	echo "a linha é $linha";
-	
+	require("conexao.php"); 
 ?>
 <html>
-
-<head>
+	
+	<head>
 	<meta charset="UTF-8">
 	<title>Controle de Distribuição de Novos Celulares</title>
 
@@ -20,9 +17,9 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">  
 	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.js">   
-	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=<?php echo $VERSION?>"> 
 	
-	
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=1.2"> 
 	
 
 	
@@ -223,4 +220,4 @@
 	<script src="js/index.js"></script>
 </body>
 
-</html>
+</html> 

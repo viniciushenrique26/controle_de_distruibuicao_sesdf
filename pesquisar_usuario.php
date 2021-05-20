@@ -8,7 +8,7 @@
 
         <!-- Formulário de Pesquisa -->
         <form action="" method="get" id="form-contato">
-            <label class="label-seach" for="termo">Pesquisar</label>
+                <label class="label-seach" for="termo">Pesquisar</label>
             <div class="col-md-7">
                 <input type="text" class="form-control" id="termo" name="termo"
                     placeholder="Infome o Nome ou E-mail">

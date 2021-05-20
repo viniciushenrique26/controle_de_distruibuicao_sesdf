@@ -6,11 +6,11 @@
 			<h2>Cadastro de Celular</h2>
 			<legend>
 
-				<form id="form-contato" method="post" action="/action_celular.php" enctype="multipart/form-data">
+				<form id="form-contato" method="POST" action="action_celular.php" enctype="multipart/form-data">
 
 					<div class="form-group">
-						<label for="linha">Linha</label>
-						<input type="number" class="form-control" id="linha" name="linha "placeholder="Infome a Linha">
+						<label for="line">Linha</label>
+						<input type="number" class="form-control" id="line" name="line" placeholder="Infome a Linha">
 					</div>
 
 					<div class="form-group">
@@ -51,11 +51,11 @@
 
 					<button type="submit" class="btn btn-primary" name="acao" value="Celular salvo!" onclick="record_cell()"
 						id="btn-record-cell" style="
-				top: 572px;
-			">
+						top: 572px;
+									">
 						Gravar
 					</button>
-					<a href="" class="btn btn-danger" onclick="cancelar_cell()" id="cancel-form-cell">Cancelar</a>
+					<a href="" type="reset" class="btn btn-danger" onclick="cancelar_cell()" id="cancel-form-cell">Cancelar</a>
 
 				</form>
 	</fieldset>
