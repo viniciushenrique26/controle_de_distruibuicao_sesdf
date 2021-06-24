@@ -3,12 +3,16 @@
 
         <!-- Cabeçalho da Listagem -->
         <legend>
-            <h2 class="title-list">Listagem de Usuários </h2>
+            <img class="title-historico" src="imagens/historicotitle.png" alt="ATPro logo" class="logo logo-light" style="
+    position: absolute;
+    top: -211%;
+    left: 9%;
+">
         </legend>
 
         <!-- Formulário de Pesquisa -->
         <form action="" method="get" id="form-contato">
-                <label class="label-seach" for="termo">Pesquisar</label>
+            <label class="label-seach" for="termo">Pesquisar</label>
             <div class="col-md-7">
                 <input type="text" class="form-control" id="termo" name="termo"
                     placeholder="Infome o Nome ou E-mail">
@@ -24,7 +28,7 @@
         <a class="btn btn-success pull-right" style="
         position: absolute;
         left: 75%;
-        top: 56%;" onclick="btn_cadastro_user()">Cadastrar Usuário</a>
+        top: 56%;" onclick="btn_vinculo()">Vincular Celular a Usuário</a>
         <div class="clearfix"></div>
 
 

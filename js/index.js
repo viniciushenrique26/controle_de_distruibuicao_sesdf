@@ -1,5 +1,4 @@
 
-
 function collapseSidebar() {
 	body.classList.toggle('sidebar-expand')
 }
@@ -10,11 +9,15 @@ function collapseSidebar() {
 
 
 function seach_cel() { 
-    $("#includedContentCell").load("pesquisar_celular.php");
+    $("#includedContentCell").load("vw_celular.php");
 };
 function seach_user() { 
-    $("#includedContentCell").load("pesquisar_usuario.php");
+    $("#includedContentCell").load("vw_usuario.php");
 };
+function seach() {  
+    $("#includedContentCell").load("vw_historico.php");
+   
+};  
 function btn_cadastro_cell() { 
     $("#includedContentCell").load("cadastro_celular.php");
 };
@@ -22,16 +25,15 @@ function btn_cadastro_user() {
     $("#includedContentCell").load("cadastro_usuario.php");
 };
 
-function seach() {  
-    $("#includedContentCell").load("listagem.php");
-   
-};  
 
 function btn_vinculo() {  
-    $("#includedContentCell").load("vincular.php");
+    $("#includedContentCell").load("cadastro_vincular.php");
    
 };   
 
+function exit() { 
+    
+};
 
 /*function btn_vinculo() { 
     $('#container-vinculo').show();
@@ -56,3 +58,7 @@ function pesquisar_vinculo() {
 function view_all() { 
     alert("Aguarde um instante...");
 }; 
+
+function btn_deletar_usuario() { 
+  alert("Deletado com Sucesso!");
+};

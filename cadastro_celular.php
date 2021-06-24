@@ -1,9 +1,15 @@
 
-<div class="container-form" id="container-cell">
+<div class="container-form" id="container-cell" style="
+    margin-left: -4%;margin-top:-1%;
+">
 	<fieldset>
 
-		<legend>
-			<h2>Cadastro de Celular</h2>
+		    <legend>
+			<img class="title-rgcell" src="imagens/rgcell.png" alt="ATPro logo" class="logo logo-light" style="
+    position: absolute;
+    top: -62%;
+    left: 9%;
+">
 			<legend>
 
 				<form id="form-contato" method="POST" action="action_celular.php" enctype="multipart/form-data">

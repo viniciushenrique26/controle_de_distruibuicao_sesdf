@@ -21,11 +21,11 @@
 
 				<div class="form-group">
 					<label for="data">Data de Inicio</label>
-					<input type="date" class="form-control" id="date" name="date" placeholder="Infome a data de recebimento do aparelho:">
+					<input type="date" class="form-control" id="date" name="data_inicio" placeholder="Infome a data de recebimento do aparelho:">
 				</div>  
 				<div class="form-group">
 					<label for="data">Data de Devolução</label>
-					<input type="date" class="form-control" id="end-date" name="end-date" placeholder="Infome a data de devolução do aparelho do aparelho:">
+					<input type="date" class="form-control" id="end-date" name="data_fim" placeholder="Infome a data de devolução do aparelho do aparelho:">
 				</div>
 
 				<div class="form-group">
@@ -41,8 +41,7 @@
 				<input type="hidden" name="acao" value="incluir">
 
 				<button type="submit" class="btn btn-primary" onclick="record_vinculo()" id="botao" style="
-				top: 493px;
-			">
+				top: 493px;">
 					Gravar
 				</button>
 				<a href="" class="btn btn-danger" id="cancel-form-vinculo">Cancelar</a>

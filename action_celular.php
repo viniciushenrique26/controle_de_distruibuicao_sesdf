@@ -1,4 +1,6 @@
-<?php
+<?php 
+	require 'conexao.php'; 
+	
 	if(isset($_POST['line'])){
 		$line = $_POST['line'];
 	} 
@@ -15,15 +17,14 @@
 		$stts = $_POST['stts'];
 	}
 	
-	/*$line = filter_input(INPUT_POST,'line', FILTER_SANITIZE_NUMBER_INT); 
-	$chip = filter_input(INPUT_POST,'chip', FILTER_SANITIZE_NUMBER_INT); 
-	$imei = filter_input(INPUT_POST,'imei', FILTER_SANITIZE_NUMBER_INT); 
-	$modelo = filter_input(INPUT_POST,'modelo', FILTER_SANITIZE_STRING);
-	$stts = filter_input(INPUT_POST,'stts', FILTER_SANITIZE_STRING); */
 	
-	echo "LINHA: $line <br>"; 
-	echo "CHIP: $chip <br>"; 
-	echo "IMEI: $imei <br>"; 
-	echo "MODELO: $modelo <br>";
-	echo "STATUS: $stts <br>";
+	$query=mysqli_query($con,"INSERT INTO tab_celulares(linha_cell,chip_cell,imei_cell,modelo,stts)VALUES('$line', '$chip','$imei','$modelo','$stts')");
+	//print_r($_POST);
+	//print_r($con);
+
+	if($query){ 
+		echo 'Cadastro realizado com sucesso';
+	} else { 
+		echo 'Não foi possivel cadastrar';
+	}
 ?>

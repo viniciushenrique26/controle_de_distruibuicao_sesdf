@@ -2,10 +2,14 @@
 	<fieldset>
 
 		<legend>
-			<h2 style="margin-top: -1%; margin-left: -9%;">Cadastro de Usuário</h2>
+			<img class="title-rguser" src="imagens/rguser.png" alt="ATPro logo" class="logo logo-light" style="
+    position: absolute;
+    top: -61%;
+    left: 9%;
+">
 		</legend>
 
-		<form method="POST" action="action_usuario.php" id="form-contato" style="margin-top: -3%;" enctype="multipart/form-data">
+		<form method="POST" action="action_usuario.php" name="cadastrar" id="form-contato" style="margin-top: -3%;" enctype="multipart/form-data">
 
 			<div class="form-group">
 				<label for="nome">Nome</label>
@@ -49,8 +53,8 @@
 					Gravar
 				</button>
 				<a href="" class="btn btn-danger" id="cancel-form-user" onclick="cancelar_user()">Cancelar</a>
-			</div>
-
+			</div> 
+			
 		</form>
 	</fieldset>
 </div>

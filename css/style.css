@@ -44,22 +44,25 @@
 
 /*Titiula da Barra Superior*/
 .title-navbar{ 
-	position: fixed; 
-	left: 35%; 
-	color: black; 
-	top: -2px;  
-	
+    position: fixed;
+    left: 31%;
+    top: -454px;
+
 }  
 .btn-list {
 	position: absolute;
-    left: 64%;
-    top: 56%;
+    margin-left: 42%;
+    margin-top: -65px
 }
 #termo { 
-	position: fixed;
-    left: 21%;
-    top: 27%;
-    width: 45%;
+	position: absolute;
+    margin-left: -28%;
+    margin-top: -9%;
+    width: 147%;
+} 
+.container-dados { 
+	
+
 }
 .light {
 	--main-bg-color: var(--light-background);
@@ -342,13 +345,14 @@ fieldset {
 }
 
 .logo {
-	height: 64px;
-	padding: 0px;  
-	position:absolute; 
-	left: 82;
-	
+	position: absolute;
+    left: -10%;
+    top: -488%;
 }
 
+.btn-user-list{ 
+	position:relative;
+}
 
 
 .navbar-badge {
@@ -514,7 +518,7 @@ fieldset {
 	padding: 10px;
     margin-left: -1%;
 	position: fixed;
-	margin-top: 45px;
+	margin-top: 44px;
 	background: var(--main-bg-color);
 	box-shadow: rgba(0,0,0,0.12) 0px 1px 4px 1px;
 	overflow: hidden;
@@ -544,7 +548,8 @@ fieldset {
 	display: flex;
 	align-items: center;
 	color: var(--main-color);
-	text-decoration: none;
+	text-decoration: none; 
+	color: white;
 }
 
 .sidebar-nav-link i {
@@ -581,7 +586,8 @@ fieldset {
 }
 
 .sidebar-expand .sidebar {
-	width: 250px;
+	width: 270px; 
+	background-color: black;
 }
 
 .sidebar-expand .wrapper {

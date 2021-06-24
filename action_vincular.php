@@ -1,34 +1,29 @@
 <?php 
+	require 'conexao.php';
 
-    if(isset($_POST['nome'])){
-		$nome = $_POST['nome'];
-	} 
-	if(isset($_POST['nome'])){
-		$nome = $_POST['nome'];
-	} 
-	if(isset($_POST['matricula'])){
-		$matricula = $_POST['matricula'];
-	}
-	if(isset($_POST['date'])){
-		$date = $_POST['date'];
-	}
-	if(isset($_POST['end-date'])){
-		$end_date = $_POST['end-date'];
-	}
-	if(isset($_POST['imei'])){
-		$imei = $_POST['imei'];
-	} 
-	if(isset($_POST['tel'])){
-		$tel = $_POST['tel'];
-	}
-	
-	
 
+    if(isset($_POST['nome']))
+	$nome = $_POST['nome'];
+	if(isset($_POST['matricula']))
+	$matricula = $_POST['matricula'];
+	if(isset($_POST['data_inicio']))
+	$data_inicio = $_POST['data_inicio'];
+	if(isset($_POST['data_fim']))
+	$data_fim = $_POST['data_fim'];
+	if(isset($_POST['imei']))
+	$imei = $_POST['imei'];
+	if(isset($_POST['tel']))
+	$tel = $_POST['tel'];
 	
-	echo "NOME: $nome <br>"; 
-	echo "MATRICULA: $matricula <br>"; 
-	echo "DATA DE RECEBIMENTO: $date <br>"; 
-	echo "DATA DE DEVOLUÇÃO: $end_date <br>";
-	echo "IMEI: $imei <br>"; 
-    echo "TELEFONE: $tel <br>";
+	
+	$query=mysqli_query($con,"SELECT  tab_user(matricula_user),tab_celulares(imei_cell) VALUES('$nome', '$matricula','$data_inicio','$data_fim','$imei','$tel')");
+	
+	
+	
+	if($query){ 
+		echo 'Cadastro realizado com sucesso';
+	} else { 
+		echo 'Não foi possivel cadastrar';
+	}
+
 ?>
