@@ -19,7 +19,8 @@
 	
 
 	$query=mysqli_query($con,"INSERT INTO tab_usuarios(name_user,matricula_user,cpf_user,email_user,tell_user,cargo_user,lotacao_user)VALUES('$nome', '$matricula','$cpf','$email','$tel','$cargo','$lotacao')");
-	
+	//print_r($_POST);
+	//print_r($con);
 	if($query){ 
 		echo 'Cadastro realizado com sucesso';
 	} else { 

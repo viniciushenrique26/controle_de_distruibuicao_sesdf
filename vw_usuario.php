@@ -1,4 +1,4 @@
-<?php 
+a<?php 
     require 'conexao.php'; 
 
     $sql = "SELECT * FROM tab_usuarios ORDER BY name_user";
@@ -20,11 +20,11 @@
         <form action="" method="get" id="form-contato">
                 <label class="label-seach" for="termo">Pesquisar</label>
             <div class="col-md-7">
-                <input type="text" class="form-control" id="termo" name="termo"
+                <input type="text"  name="barra_pesquisa" class="form-control" id="termo" name="termo"
                     placeholder="Infome o Nome ou E-mail">
             </div> 
             <div class="btn-list"> 
-                <button type="submit" id="seach-list" class="btn btn-primary" onclick="pesquisar_vinculo()">Pesquisar</button>
+                <button action="busca_usuarios.php" method="GET" type="submit" id="seach-list" class="btn btn-primary" >Pesquisar</button>
                 <button type="submit" id="view-all"class="btn btn-secondary" onclick="view_all()">Ver Todos</button>
             </div>
             
@@ -39,7 +39,10 @@
 
     </fieldset>
     <div class="container-dados" id="container-dados">
-        <table class="table table-striped " style="position: absolute;margin-left: -14%;width: auto;"> 
+        <table class="table table-striped " style="    position: absolute;
+    margin-left: -14%;
+    width: 88rem;
+    top: 74%;"> 
             <tr> 
                 <td>id</td>
                 <td>Nome</td> 
@@ -66,8 +69,8 @@
                 <td><?php echo utf8_encode($dado["cargo_user"])?></td>  
                 <td><?php echo $dado["lotacao_user"]?></td> 
                 <td><button type="submit" class="btn btn-info btn-lg" id="btn-vinc"><i class="fas fa-plus"></i></button></td> 
-                <td><button type="submit" onclick="javascript: location.href='editar_usuario.php';"  class="btn btn-warning btn-lg" id="btn-editar-usuario"><i class="far fa-edit"></i></button></td> 
-                <td><button type="submit" onclick="javascript: location.href='deletar_usuario.php'; "   class="btn btn-danger" id="btnDeletarUsuario"><i class="fas fa-trash-alt"></i></button></td>
+                <td><a type="" href="editar_usuarios.php?id_user= <?php echo $dado["id_user"]?>"  class="btn btn-warning btn-lg" id="btn-editar-usuario"><i class="far fa-edit"></i></a></td> 
+                <td><a type="" href="deletar_usuarios.php?id_user=<?php echo $dado["id_user"]?>"  onclick="return confirm('Confirma exclusão do registro?')" class="btn btn-danger" onclick="delete()" id="btnDeletarUsuario"><i class="fas fa-trash-alt"></i></a></td>
             </tr> 
             <?php } ?> 
             </tbody>

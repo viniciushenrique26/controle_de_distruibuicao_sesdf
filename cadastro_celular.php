@@ -60,7 +60,7 @@
 						top: 572px;
 									">
 						Gravar
-					</button>
+					</button> 
 					<a href="" type="reset" class="btn btn-danger" onclick="cancelar_cell()" id="cancel-form-cell">Cancelar</a>
 
 				</form>

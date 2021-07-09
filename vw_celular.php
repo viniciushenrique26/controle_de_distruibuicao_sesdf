@@ -12,7 +12,7 @@
         <legend>
             <img class="title-celulares" src="imagens/Celulares.png" alt="ATPro logo" class="logo logo-light" style="position:absolute;
     left: 9%;
-    top: -65%;">
+    top: -26rem;">
         </legend>
 
         <!-- Formulário de Pesquisa -->
@@ -41,7 +41,10 @@
 
     </fieldset> 
     <div class="container-dados-cell" id="container-dados-cell" style="
-    margin-left: -25%;">
+        margin-left: -13%;
+    width: 87rem;
+    position: absolute;
+    top: 76%;">
         <table class="table table-striped"> 
             <tr> 
                 <td>ID</td> 

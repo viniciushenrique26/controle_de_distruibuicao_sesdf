@@ -19,7 +19,7 @@
 "> 
 
     <form action="login.php" method="post">
-		<img src="imagens/logintitle.png" alt="ATPro logo" class="logo logo-light" style="position: absolute;top: -15%;left: 37%;">
+		<img src="imagens/adm.gif" alt="ATPro logo" class="logoooadm">
      	<?php if (isset($_GET['error'])) { ?>
      		<p class="error"><?php echo $_GET['error']; ?></p>
      	<?php } ?> 

@@ -146,9 +146,20 @@ if (isset($_SESSION['id_login']) && isset($_SESSION['user_login'])) {
 		</ul>
 	</div>
 	
-	<div id="includedContentCell"> </div>
+	<div id="includedContentCell"> 
+		<img src="imagens/adm.gif" alt="ATPro logo" class="logo logo-light" style="
+    position: fixed;
+    left: 13%;
+    top: -1%;
+    width: 105rem;
+    height: 101%;
+">
+	</div>
+	<div> 
 	
-
+	</div>
+	
+	
 	
 	<script src="js/jquery-3.6.0.min.js"></script> 
 	<script src="js/index.js"></script>
