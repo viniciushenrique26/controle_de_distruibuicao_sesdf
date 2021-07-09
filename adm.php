@@ -77,7 +77,7 @@ if (isset($_SESSION['id_login']) && isset($_SESSION['user_login'])) {
 
 <body class="overlay-scrollbar light sidebar-expand">
 
-	<nav class="navbar navbar-dark" style="background-color: #1C1C1C;">
+	<nav class="navbar navbar-dark" style="background-color: black;">
 
 		<img src="imagens/logotp.png" alt="ATPro logo" class="logo logo-light">
 		<ul class="navbar-nav"> 
@@ -104,10 +104,10 @@ if (isset($_SESSION['id_login']) && isset($_SESSION['user_login'])) {
 				<a href="#" onclick="seach()" id="seach-tel" class="sidebar-nav-link">
 					<div onclick="seach-user">
 						<i class="fas fa-search" style="
-    color: white;
+    color: white; 
 "></i>
 					</div>
-					<span>
+					<span style="font-size:20px;font-family:monospace">
 						Pesquisa
 					</span>
 
@@ -121,7 +121,7 @@ if (isset($_SESSION['id_login']) && isset($_SESSION['user_login'])) {
     color: white;
 "></i>
 					</div>
-					<span>Usuário</span>
+					<span style="font-size:20px;font-family:monospace">Usuário</span>
 				</a>
 			</li>
 			<li class="sidebar-nav-item">
@@ -131,7 +131,7 @@ if (isset($_SESSION['id_login']) && isset($_SESSION['user_login'])) {
     color: white;
 "></i>
 					</div>
-					<span>Celulares</span>
+					<span style="font-size:20px;font-family:monospace">Celulares</span>
 				</a>
 			</li>
 			<li class="side-exit">
