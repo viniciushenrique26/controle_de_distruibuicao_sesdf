@@ -45,8 +45,8 @@
 /*Titiula da Barra Superior*/
 .title-navbar{ 
     position: fixed;
-    left: 31%;
-    top: -454px;
+    left: 29%;
+    top: -511px;
 
 }  
 .btn-list {
@@ -346,7 +346,7 @@ fieldset {
 
 .logo {
 	position: absolute;
-    left: -10%;
+    left: -235px;
     top: -488%;
 }
 

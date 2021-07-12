@@ -85,7 +85,7 @@ if (isset($_SESSION['id_login']) && isset($_SESSION['user_login'])) {
 			<li class="nav-item">
 				<a class="nav-link">
 					<i class="fas fa-bars" onclick="collapseSidebar()" style="
-    color: white;
+    color: transparent;
 "></i>
 				</a>
 
@@ -136,7 +136,7 @@ if (isset($_SESSION['id_login']) && isset($_SESSION['user_login'])) {
 			</li>
 			<li class="side-exit">
 				<div class="sidebar-exit-item"> 
-					<button onclick="javascript: location.href='logout.php';" type="button" class="btn btn-danger" style="
+					<button onclick="javascript: location.href='logout.php';" type="button" class="btn btn-danger btn-lg" style="
     position: absolute;
     top: 87%;
     left: 37%;
