@@ -31,9 +31,6 @@ function btn_vinculo() {
    
 };   
 
-function exit() { 
-    
-};
 
 
 /*function btn_vinculo() { 
@@ -62,4 +59,24 @@ function view_all() {
 
 function btn_deletar_usuario() { 
   alert("Deletado com Sucesso!");
-};
+}; 
+
+$(function(){  
+    //pesquisar sem refresh
+    $("#pesquisa_user").keyup(function() { 
+        var pesquisa_user = $(this).val();  
+        //verificar se há algo digitado 
+        if(pesquisa_user != '' ) {  
+            var dados = { 
+                
+                palavra : pesquisa_user
+            }
+         
+            $.post('busca.php', dados, function(retorna) { 
+                $(".resultado").html(retorna);
+            }); 
+         }else { 
+             $(".resultado").html('');
+         }
+    });  
+});

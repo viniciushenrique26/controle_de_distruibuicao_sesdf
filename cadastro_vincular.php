@@ -19,6 +19,17 @@
 					placeholder="Digite sua matrícula:">
 				</div>
 
+				
+				<div class="form-group">
+					<label for="imei">IMEI</label>
+					<input type="imei" class="form-control" id="imei" name="imei" placeholder="Informe o IMEI">
+				</div> 
+				
+				<div class="form-group">
+					<label for="tel">Telefone</label>
+					<input type="tel" class="form-control" id="tel" name="tel" placeholder="Digite o seu telefone: ">
+				</div>
+				
 				<div class="form-group">
 					<label for="data">Data de Inicio</label>
 					<input type="date" class="form-control" id="date" name="data_inicio" placeholder="Infome a data de recebimento do aparelho:">
@@ -27,17 +38,6 @@
 					<label for="data">Data de Devolução</label>
 					<input type="date" class="form-control" id="end-date" name="data_fim" placeholder="Infome a data de devolução do aparelho do aparelho:">
 				</div>
-
-				<div class="form-group">
-					<label for="imei">IMEI</label>
-					<input type="imei" class="form-control" id="imei" name="imei" placeholder="Informe o IMEI">
-				</div> 
-				
-				<div class="form-group">
-				<label for="tel">Telefone</label>
-				<input type="tel" class="form-control" id="tel" name="tel" placeholder="Digite o seu telefone: ">
-				</div>
-
 				<input type="hidden" name="acao" value="incluir">
 
 				<button type="submit" class="btn btn-primary" onclick="record_vinculo()" id="botao" style="

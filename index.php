@@ -13,8 +13,8 @@
     height: 101%;
 " > 
 	<img src="imagens/logotp.png" alt="ATPro logo" class="logo logo-light" style="
-    position: absolute;
-    top: 49%;
+    position: fixed;
+    top: 47%;
     left: -11%;
 "> 
 

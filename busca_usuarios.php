@@ -1,4 +1,3 @@
-
 <?php 
 require 'conexao.php';
 if (!isset($_GET['barra_pesquisa'])) {
