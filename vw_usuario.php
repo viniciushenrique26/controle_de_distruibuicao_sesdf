@@ -98,7 +98,7 @@
                 <td><?php echo $dado["tell_user"]?></td> 
                 <td><?php echo utf8_encode($dado["cargo_user"])?></td>  
                 <td><?php echo $dado["lotacao_user"]?></td> 
-                <td><button type="" class="btn btn-info btn-lg" id="btn-vinculo" <?php echo $vinculo?>><i class="fas fa-plus"></i></button></td> 
+                <td><button type="" class="btn btn-info btn-lg" id="btn-vinculo" ><i class="fas fa-plus"></i></button></td> 
                 <td><button type=""   class="btn btn-warning btn-lg" id="btn-editar-usuario" data-toggle="modal" data-target="#exampleModal" data-id="<?php echo $dado['id_user']?>" data-name="<?php echo $dado['name_user']?>" data-matricula="<?php echo $dado['matricula_user']?>" data-cpf="<?php echo $dado['cpf_user']?>" data-email="<?php echo $dado['email_user']?>" data-tell="<?php echo $dado['tell_user']?>" data-cargo="<?php echo $dado['cargo_user']?>" data-lotacao="<?php echo $dado['lotacao_user']?>"><i class="far fa-edit"></i></button></td> 
                 <td><a type="" class="btn btn-danger btn-lg" id="btnDeletarUsuario" href="deletar_usuarios.php?id_user=<?php echo $dado["id_user"]?>"  onclick="return confirm('Confirma exclusão do registro?')"  ><i class="fas fa-trash-alt"></i></a></td>
             </tr>  
@@ -152,7 +152,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                    <a type="submit" name="atualizar-user" href="editar_usuarios.php?id_user=<?php echo $dado["id_user"]?>" class="btn btn-primary">Atualizar</a>
+                    <a type="submit" name="atualizar-user" href="gravaaltclientes.php?id_user=<?php echo $dado["id_user"]?>" class="btn btn-primary">Atualizar</a>
                 </div>
                 </div>
             </div>
@@ -163,4 +163,3 @@
         </table>
         
 </div>   
-<?php echo ($result_cell)?> 
